@@ -1,0 +1,175 @@
+:root {
+    --main-color: rgb(145, 110, 183);
+    --main-color-darker: rgb(119, 87, 153);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Norse Bold';
+    src: url(Norse-Bold.otf);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.photo {
+    background: url(flower.jpg);
+    background-position: center;
+    height: 100vh;
+    flex: 1 1 0;
+}
+
+.title {
+    margin-top: 200px;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 15px 0;
+
+}
+
+.title img {
+    width: 5rem;
+    margin-bottom: -14px;
+}
+
+.title h1 {
+    display: inline;
+    color: white;
+    font-size: 5rem;
+    font-family: 'Norse Bold', sans-serif;
+}
+
+.main {
+    flex: 2 1 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 247, 247);
+}
+
+.top {
+    padding: 30px;
+    flex: 1 1 0;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.text {
+    width: 85%;
+    margin-top: 90px;
+}
+
+.signup {
+    flex: 2 1 0;
+}
+
+.p-2 {
+    margin-top: 20px;
+}
+
+.labels-and-inputs {
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0px 6px 5px 0px rgba(222,222,222,1);
+}
+
+.labels-and-inputs h1 {
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(55, 55, 55);
+}
+
+label, input {
+    display: block;
+}
+
+.input-elements-container {
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    color: rgb(55, 55, 55);
+    font-weight: 500;
+    
+}
+
+.input-elements {
+    display: flex;
+    width: 100%;
+    margin: 15px 0;
+}
+.input-elements div{
+    width: 100%;
+}
+
+input {
+    width: 70%;
+    height: 20px;
+    border: 1px solid #E5E7EB;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+input:focus {
+    box-shadow: 2px 4px 5px 0px rgba(224,224,224,1);
+    border: 1px solid rgb(0, 89, 255);
+    outline: none;
+
+}
+
+.input-elements div:nth-child(2) {
+    margin-left: -40px;
+}
+
+.not-matching {
+    border: 1px solid red;
+}
+
+#nomatch {
+    text-transform: none;
+    color: red;
+    font-size: 10px;
+    position:absolute;
+    display: none;
+}
+
+.submit {
+    padding: 30px;
+}
+
+.submit button {
+    padding: 12px 44px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 6px 5px 0px rgba(224,224,224,1);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.submit button:hover {
+    background-color: var(--main-color-darker);
+    cursor: pointer;
+}
+
+.submit p {
+    margin-top: 24px;
+}
+
+#login {
+    color: var(--main-color);
+    font-weight: 600;
+    text-decoration: none;
+}
